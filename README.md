@@ -22,3 +22,10 @@
    5) Allow auto-make to start even if developed application is currently running 체크
    6) gradle 새로고침 클릭
 ---
+스프링 웹개발
+1. 정적 컨텐츠
+   1) http://localhost:8080/hello-static.html 
+2. MVC와 템플릿엔진 ex. jsp
+3. API
+
+---
