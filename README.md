@@ -26,6 +26,7 @@
 1. 정적 컨텐츠
    1) http://localhost:8080/hello-static.html 
 2. MVC와 템플릿엔진 ex. jsp
+   1) http://localhost:8080/hello-mvc?name=spring
 3. API
 
 ---
