@@ -1,4 +1,4 @@
-폴더 : .idea : Intellij 가 사용하는 설정파일
+.idea(폴더) : Intellij 가 사용하는 설정파일
 
 ---
 로그 관런 라이브러리 : logback, slf4j
@@ -28,10 +28,9 @@
    1) http://localhost:8080/hello-static.html 
 2. MVC와 템플릿엔진 ex. jsp
    1) http://localhost:8080/hello-mvc?name=spring
-3. API
+3. API ( @ResponseBody )
    1) http://localhost:8080/hello-string?name=abcde -> 문자열 리턴 ( hello abcde )
    2) http://localhost:8080/hello-api?name=qwer -> JSON 리턴 ( {"name":"qwer"} )
-   3) @ResponseBody
 
 ---
 어노테이션
@@ -42,6 +41,29 @@
 
 ---
 단축키
-1. Getter/Setter : Command + N
-2. 어노테이션 도움말 : Command + P ( 어노테이션에 커서 둔 다음 )
-3. 자동완성 : Command + Shift + Enter ( 세미콜론 자동완성 )
+1. Command + N
+   - Getter/Setter
+2. Command + P ( 어노테이션에 커서 둔 다음 )
+   - 어노테이션 도움말
+3. Command + Shift + Enter ( 세미콜론 자동완성 )
+   - 자동완성
+4. Option + Enter ( Editor 의 빨간줄 커서 둔 상태 )
+   - import
+5. Control + Enter ( ex. Java, Generate 등 )
+   - 신규파일 생성
+
+---
+자바 : Stream API(filter 메소드), Lambda, Optional
+1. Stream
+   1) Java 8 부터 사용
+   2) Collection이나 Array 등의 데이터를 함수형 방식으로 처리할 수 있게 하는 추상화된 데이터 시퀀스
+2. filter
+   1) Java 8 부터 사용
+   2) Stream의 중간 연산 중 하나로, 주어진 조건(Predicate)을 만족하는 요소만 걸러내어 새로운 Stream을 생성하는 데 사용
+   3) 예시 : findByName ( MemoryMemberRepository.java )
+3. Optional
+   1) Java 8 부터 사용
+   2) null인 값을 참조해도 NullPointerException이 발생하지 않도록 값을 감싸는 Wrapper 클래스
+   3) value에 값을 저장하기 때문에 값이 null이더라도 바로 NPE가 발생하지 않음
+   4) 클래스이기 때문에 각종 메소드 제공
+   5) 예시 : findById ( MemoryMemberRepository.java )
