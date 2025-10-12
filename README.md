@@ -45,6 +45,25 @@
    2) 테스트가 서로 영향이 없도록 항상 새로운 객체를 생성하고, 의존관계로 새로 맺어줌
 
 ---
+스프링 빈 등록 방법
+1. 컴포넌트 스캔과 자동 의존관계 설정
+   1) @Controller, @Service, @Repository 에 @Component 가 존재
+   2) @Component 가 있으면 스프링 빈으로 자동 등록됨
+   3) 생성자에 @Autowired 사용 <br>
+      (1) 스프링이 객체생성 시점에 연관된 객체를 스프링 컨테이너에서 해당 스프링 빈을 찾아서 주입함 <br>
+      (2) 생성자가 1개만 있으면 생략 가능 <br>
+      (3) DI ( Dependency Injection, 의존성 주입 ) : 객체 의존관계를 외부에서 넣어주는 것
+   4) 컴포넌트 기본 스캔 대상 <br>
+      (1) 최초 실행되는 SpringbootStartApplication 가 속해 있는 hello.springbootstart 패키지랑 동일한 패키지거나 하위 패키지는 스프링 빈으로 자동 등록 <br>
+      (2) @SpringBootApplication 에 들어가보면 @ComponentScan 이 존재함.
+2. 자바코드로 직접 스프링 빈 등록
+
+---
+참고
+1. 스프링은 스프링 컨테이너에서 스프링 빈을 등록할 때 기본으로 싱글톤으로 등록 <br>
+   즉, 같은 스프링 빈이면 모두 같은 인스턴스 ( 대부분 )
+
+---
 IntelliJ 단축키
 1. Command + N
    - Getter/Setter

@@ -2,13 +2,17 @@ package hello.springbootstart.service;
 
 import hello.springbootstart.domain.Member;
 import hello.springbootstart.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
     private final MemoryMemberRepository memoryMemberRepository;
 
+    @Autowired
     public MemberService(MemoryMemberRepository memoryMemberRepository) {
         // new 를 통해서 생성하는게 아니라 외부에서 넣어주도록 변경 : DI ( Dependency Injection )
         this.memoryMemberRepository = memoryMemberRepository;
