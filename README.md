@@ -40,6 +40,9 @@
    3) byte 처리 등 기타 여러 HttpMessageConverter 가 기본으로 등록되어 있음
 2. @AfterEach
    1) JUnit 에서 각 테스트가 종료할 때마다 실행 ( 테스트별 의존성 제거 )
+3. @BeforeEach
+   1) JUnit 에서 각 테스트 실행 전에 호출됨
+   2) 테스트가 서로 영향이 없도록 항상 새로운 객체를 생성하고, 의존관계로 새로 맺어줌
 
 ---
 IntelliJ 단축키
@@ -47,21 +50,27 @@ IntelliJ 단축키
    - Getter/Setter
 2. Command + P ( 어노테이션, 파라미터에 커서 둔 다음 )
    - 도움말
-3. Command + Shift + Enter
+3. Command + Shift + T
+   - JUnit 파일 신규 생성 ( 해당 자바파일에서 단축키 수행 )
+4. Command + Shift + Enter
    - 자동완성 ( ex. 세미콜론, 줄바꿈 등 )
-4. Command + Shift + ( '[' or ']' )
+5. Command + Shift + ( '[' or ']' )
     - Editor 탭이동
-5. Command + Option + v
+6. Command + Shift + 8
+   - 세로(컬럼) 편집 켜기, 한번 더 누르면 끔
+7. Command + Option + v
    - 객체/변수 자동완성
-6. Control + Enter ( ex. Java, Generate 등 )
+8. Control + Enter ( ex. Java, Generate 등 )
    - 신규파일 생성
-7. Control + Command + F
+9. Control + Command + F
    - 전체화면
-8. Control + Shift + R
-   - JUnit 에서 TestCase 실행
-9. Control + T
-   1) 함수로 빼기 : 블럭한 후 Control + T -> Extract Method 선택
-10. Option + Enter
+10. Control + Shift + R
+    - JUnit 에서 TestCase 실행
+11. Control + T
+    - 함수로 빼기 : 블럭한 후 Control + T -> Extract Method 선택
+12. Control + R
+    - JUnit 에서 이전에 TestCase 수행했던 것 재수행
+13. Option + Enter
     - import
     - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
 

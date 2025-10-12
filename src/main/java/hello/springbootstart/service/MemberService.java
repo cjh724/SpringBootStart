@@ -7,7 +7,13 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    private final MemoryMemberRepository memoryMemberRepository =  new MemoryMemberRepository();
+    private final MemoryMemberRepository memoryMemberRepository;
+
+    public MemberService(MemoryMemberRepository memoryMemberRepository) {
+        // new 를 통해서 생성하는게 아니라 외부에서 넣어주도록 변경 : DI ( Dependency Injection )
+        this.memoryMemberRepository = memoryMemberRepository;
+    }
+
 
     public Long join ( Member member) {     // 회원가입
         validateDuplicateMember(member);    // 같은 이름이 있는 회원은 가입 불가
