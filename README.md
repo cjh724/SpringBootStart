@@ -51,15 +51,19 @@ IntelliJ 단축키
    - 자동완성 ( ex. 세미콜론, 줄바꿈 등 )
 4. Command + Shift + ( '[' or ']' )
     - Editor 탭이동
-5. Control + Enter ( ex. Java, Generate 등 )
+5. Command + Option + v
+   - 객체/변수 자동완성
+6. Control + Enter ( ex. Java, Generate 등 )
    - 신규파일 생성
-6. Control + Command + F
+7. Control + Command + F
    - 전체화면
-7. Control + Shift + R
+8. Control + Shift + R
    - JUnit 에서 TestCase 실행
-8. Option + Enter
-   - import
-   - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
+9. Control + T
+   1) 함수로 빼기 : 블럭한 후 Control + T -> Extract Method 선택
+10. Option + Enter
+    - import
+    - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
 
 ---
 자바 : Stream API(filter 메소드), Lambda, Optional
