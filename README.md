@@ -38,19 +38,28 @@
    1) 기본 문자처리 : StringHttpMessageConverter
    2) 기본 객체처리 : MappingJackson2HttpMessageConverter
    3) byte 처리 등 기타 여러 HttpMessageConverter 가 기본으로 등록되어 있음
+2. @AfterEach
+   1) JUnit 에서 각 테스트가 종료할 때마다 실행 ( 테스트별 의존성 제거 )
 
 ---
-단축키
+IntelliJ 단축키
 1. Command + N
    - Getter/Setter
-2. Command + P ( 어노테이션에 커서 둔 다음 )
-   - 어노테이션 도움말
-3. Command + Shift + Enter ( 세미콜론 자동완성 )
-   - 자동완성
-4. Option + Enter ( Editor 의 빨간줄 커서 둔 상태 )
-   - import
+2. Command + P ( 어노테이션, 파라미터에 커서 둔 다음 )
+   - 도움말
+3. Command + Shift + Enter
+   - 자동완성 ( ex. 세미콜론, 줄바꿈 등 )
+4. Command + Shift + ( '[' or ']' )
+    - Editor 탭이동
 5. Control + Enter ( ex. Java, Generate 등 )
    - 신규파일 생성
+6. Control + Command + F
+   - 전체화면
+7. Control + Shift + R
+   - JUnit 에서 TestCase 실행
+8. Option + Enter
+   - import
+   - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
 
 ---
 자바 : Stream API(filter 메소드), Lambda, Optional
