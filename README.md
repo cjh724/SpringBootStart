@@ -16,8 +16,7 @@ SringBoot Terminal 에서 build ( MAC OS )
    - Control + Z
 
 <img width="1054" height="861" alt="Image" src="https://github.com/user-attachments/assets/b80374ac-0c48-43f5-af89-f149f24029e3" />
-<img width="1054" height="861" alt="Image" src="https://github.com/user-attachments/assets/1e0049b2-35c3-4b0f-874a-05c9679a290d" />
-
+<img width="1558" height="595" alt="Image" src="https://github.com/user-attachments/assets/d77a8836-2c4b-4cab-b1ea-d095904c2a74" />
 
 윈도우 ( 해보진 않음 )
 1. ./gradlew.bat clean build
