@@ -73,27 +73,29 @@ IntelliJ 단축키
    - Getter/Setter
 2. Command + P ( 어노테이션, 파라미터에 커서 둔 다음 )
    - 도움말
-3. Command + Shift + T
+3. Command + E
+   - 가장 최근 열어본 파일 목록
+4. Command + Shift + T
    - JUnit 파일 신규 생성 ( 해당 자바파일에서 단축키 수행 )
-4. Command + Shift + Enter
+5. Command + Shift + Enter
    - 자동완성 ( ex. 세미콜론, 줄바꿈 등 )
-5. Command + Shift + ( '[' or ']' )
+6. Command + Shift + ( '[' or ']' )
     - Editor 탭이동
-6. Command + Shift + 8
+7. Command + Shift + 8
    - 세로(컬럼) 편집 켜기, 한번 더 누르면 끔
-7. Command + Option + v
+8. Command + Option + v
    - 객체/변수 자동완성
-8. Control + Enter ( ex. Java, Generate 등 )
+9. Control + Enter ( ex. Java, Generate 등 )
    - 신규파일 생성
-9. Control + Command + F
-   - 전체화면
-10. Control + Shift + R
+10. Control + Command + F
+    - 전체화면
+11. Control + Shift + R
     - JUnit 에서 TestCase 실행
-11. Control + T
+12. Control + T
     - 함수로 빼기 : 블럭한 후 Control + T -> Extract Method 선택
-12. Control + R
+13. Control + R
     - JUnit 에서 이전에 TestCase 수행했던 것 재수행
-13. Option + Enter
+14. Option + Enter
     - import
     - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
 
