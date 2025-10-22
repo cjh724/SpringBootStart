@@ -4,6 +4,27 @@
 로그 관런 라이브러리 : logback, slf4j
 
 ---
+SringBoot Terminal 에서 build ( MAC OS )
+1. gradlew 가 존재하는 폴더로 이동
+2. build/libs 폴더에 .jar 파일 생성
+   - 명령어 : ./gradlew clean build
+   - 프로젝트명-0.0.1-SNAPSHOT.jar 파일이 build/libs 에 생성됨
+3. 서버 실행 ( jar 파일 실행 )
+   - 이동 : cd build/libs
+   - 실행 : java -jar 프로젝트명-0.0.1-SNAPSHOT.jar
+4. 서버 끄기
+   - Control + Z
+
+<img width="1054" height="861" alt="Image" src="https://github.com/user-attachments/assets/b80374ac-0c48-43f5-af89-f149f24029e3" />
+<img width="1054" height="861" alt="Image" src="https://github.com/user-attachments/assets/1e0049b2-35c3-4b0f-874a-05c9679a290d" />
+
+
+윈도우 ( 해보진 않음 )
+1. ./gradlew.bat clean build
+2. cd build/libs
+3. java -jar 프로젝트명-0.0.1-SNAPSHOT.jar
+
+---
 스프링시작 : 메뉴얼 검색
 1. https://spring.io/
 2. project > spring boot
@@ -98,6 +119,14 @@ IntelliJ 단축키
 14. Option + Enter
     - import
     - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
+
+---
+IntelliJ 설정
+1. 미사용 import 자동 삭제
+   - IntelliJ IDEA > settings...
+   - Editor > General > Auto import
+   - Optimize imports on the fly 체크
+
 
 ---
 자바 : Stream API(filter 메소드), Lambda, Optional

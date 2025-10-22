@@ -1,7 +1,6 @@
 package hello.springbootstart.controller;
 
 import hello.springbootstart.domain.Member;
-import hello.springbootstart.repository.MemberRepository;
 import hello.springbootstart.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
