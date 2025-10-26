@@ -109,6 +109,7 @@ IntelliJ 단축키
    - 객체/변수 자동완성
 9. Control + Enter ( ex. Java, Generate 등 )
    - 신규파일 생성
+   - Generate ( ex. 생성자 )
 10. Control + Command + F
     - 전체화면
 11. Control + Shift + R
@@ -162,7 +163,7 @@ h2 설치
    2) jobs
    3) exit
 7. h2 종료2
-   1) pid 찾기 : ps -ef | grep h2
+   1) pid 찾기 : ps -ef | head -n 1 && ps -ef | grep h2
    2) kill -15 <pid> : 종료
    3) kill -9 <pid>  : 강제종료
 8. 확인
