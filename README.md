@@ -15,7 +15,9 @@ SringBoot Terminal 에서 build ( MAC OS )
 4. 서버 끄기
    - Control + Z
 
+* 빌드 <br>
 <img width="1054" height="861" alt="Image" src="https://github.com/user-attachments/assets/b80374ac-0c48-43f5-af89-f149f24029e3" />
+* 실행 <br>
 <img width="1558" height="595" alt="Image" src="https://github.com/user-attachments/assets/d77a8836-2c4b-4cab-b1ea-d095904c2a74" />
 
 윈도우 ( 해보진 않음 )
@@ -142,3 +144,52 @@ IntelliJ 설정
    3) value에 값을 저장하기 때문에 값이 null이더라도 바로 NPE가 발생하지 않음
    4) 클래스이기 때문에 각종 메소드 제공
    5) 예시 : findById ( MemoryMemberRepository.java )
+
+---
+h2 설치
+1. h2 설치
+   1) brew install h2
+2. h2 설치경로 확인 ( /opt/homebrew/bin/h2 )
+   1) where h2
+3. 이동 ( 설치경로랑 다름 )
+   1) cd /opt/homebrew/opt/h2/bin
+4. 파일 권한 설정 ( -r-xr-xr-x => -rwxr-xr-x ) : 최초 한번만 하면 됨
+   1) chmod 755 h2
+5. h2 실행 ( 3번 경로에 h2 파일 있음 )
+   1) h2
+6. h2 종료2 ( 터미널까지 종료해야 함 )
+   1) Control+Z
+   2) jobs
+   3) exit
+7. h2 종료2
+   1) pid 찾기 : ps -ef | grep h2
+   2) kill -15 <pid> : 종료
+   3) kill -9 <pid>  : 강제종료
+8. 확인
+   1) home directory(/Users/cho) 에 test.mv.db 가 만들어짐
+9. jdbc URL 변경
+   1) 변경전(파일접근) : jdbc:h2:~/test
+   2) 변경후(소켓접근-여려명접근가능) : jdbc:h2:tcp://localhost/~/test
+
+* h2 설치 <br>
+<img width="736" height="455" alt="Image" src="https://github.com/user-attachments/assets/3d32073a-9fb2-4114-b8d8-da63dc479179" />
+
+* 파일권한 설정 <br>
+<img width="333" height="237" alt="Image" src="https://github.com/user-attachments/assets/7c2289f8-f988-4235-ad93-1d919670d572" />
+
+* h2 최초 실행 - 파일 접근 <br>
+<img width="771" height="462" alt="Image" src="https://github.com/user-attachments/assets/1f158f3a-0593-419a-b039-c196ff53583e" />
+
+* test.mv.db 파일생성 확인
+  - Command+T 로 Terminal 한개 더 열기
+  - home directory(/Users/cho) 에 test.mv.db 생성 확인 <br>
+<img width="809" height="259" alt="Image" src="https://github.com/user-attachments/assets/1fec2e63-3f2c-41c9-a1f5-501ca52d4287" />
+
+* h2 실행 - 소켓 접근 <br>
+<img width="756" height="451" alt="Image" src="https://github.com/user-attachments/assets/fa7a6b34-cf0f-48d7-8fc6-4accc3e2d52c" />
+
+* h2 프로세스를 pid 를 통해서 종료
+  - pid 찾은 후 종료 <br>
+<img width="1061" height="188" alt="Image" src="https://github.com/user-attachments/assets/320ba489-4a52-4777-8a28-dd102b9ae17d" />
+  - 종료 확인 <br>
+<img width="1057" height="141" alt="Image" src="https://github.com/user-attachments/assets/27b1adb3-e60f-4ebf-a1c2-f02bdbbc19a4" />
