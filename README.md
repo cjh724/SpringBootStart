@@ -125,7 +125,7 @@ IntelliJ 단축키
 14. Option + Enter
     - import
     - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
-
+    - Lambda 로 변환
 ---
 IntelliJ 설정
 1. 미사용 import 자동 삭제
