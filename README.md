@@ -67,6 +67,10 @@ SringBoot Terminal 에서 build ( MAC OS )
    2) 테스트가 서로 영향이 없도록 항상 새로운 객체를 생성하고, 의존관계로 새로 맺어줌
 4. @Configuration
    1) 스프링 빈 등록할 때 사용
+5. @SpringBootTest
+   1) 스프링 컨테이너와 테스트를 함께 실행
+6. @Transactional
+   1) 테스트 시작전에 Transaction 시작, 테스트 완료 후 롤백
 
 ---
 스프링 빈 등록 방법
