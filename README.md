@@ -71,6 +71,8 @@ SringBoot Terminal 에서 build ( MAC OS )
    1) 스프링 컨테이너와 테스트를 함께 실행
 6. @Transactional
    1) 테스트 시작전에 Transaction 시작, 테스트 완료 후 롤백
+7. @Entity
+   1) JPA가 관리하는 Entity
 
 ---
 스프링 빈 등록 방법
@@ -111,18 +113,20 @@ IntelliJ 단축키
    - 세로(컬럼) 편집 켜기, 한번 더 누르면 끔
 8. Command + Option + v
    - 객체/변수 자동완성
-9. Control + Enter ( ex. Java, Generate 등 )
-   - 신규파일 생성
-   - Generate ( ex. 생성자 )
-10. Control + Command + F
+9. Command + Option + n
+   - inline 함수로 변경 ( 변수 커서한 상태로 )
+10. Control + Enter ( ex. Java, Generate 등 )
+    - 신규파일 생성
+    - Generate ( ex. 생성자 )
+11. Control + Command + F
     - 전체화면
-11. Control + Shift + R
+12. Control + Shift + R
     - JUnit 에서 TestCase 실행
-12. Control + T
+13. Control + T
     - 함수로 빼기 : 블럭한 후 Control + T -> Extract Method 선택
-13. Control + R
+14. Control + R
     - JUnit 에서 이전에 TestCase 수행했던 것 재수행
-14. Option + Enter
+15. Option + Enter
     - import
     - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
     - Lambda 로 변환
