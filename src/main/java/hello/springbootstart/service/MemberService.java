@@ -17,18 +17,18 @@ public class MemberService {
     }
 
     public Long join ( Member member) {     // 회원가입
-        long start = System.currentTimeMillis();
-        try {
+//        long start = System.currentTimeMillis();
+//        try {
             validateDuplicateMember(member);    // 같은 이름이 있는 회원은 가입 불가
 
             memberRepository.save( member );
             return member.getId();
-        } finally {
-            long end = System.currentTimeMillis();
-            long timeMs = end - start;
+//        } finally {
+//            long end = System.currentTimeMillis();
+//            long timeMs = end - start;
 
-            System.out.println( "join timeMs = " + timeMs + "ms" );
-        }
+//            System.out.println( "join timeMs = " + timeMs + "ms" );
+//        }
     }
 
     private void validateDuplicateMember(Member member) {

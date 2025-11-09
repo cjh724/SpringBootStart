@@ -73,6 +73,8 @@ SringBoot Terminal 에서 build ( MAC OS )
    1) 테스트 시작전에 Transaction 시작, 테스트 완료 후 롤백
 7. @Entity
    1) JPA가 관리하는 Entity
+8. @Aspect
+   1) AOP(Aspect Oriented Programming) 때 사용
 
 ---
 스프링 빈 등록 방법
@@ -94,9 +96,12 @@ SringBoot Terminal 에서 build ( MAC OS )
 참고
 1. 스프링은 스프링 컨테이너에서 스프링 빈을 등록할 때 기본으로 싱글톤으로 등록 <br>
    즉, 같은 스프링 빈이면 모두 같은 인스턴스 ( 대부분 )
+2. AOP 관련 단어들 : CGlib, Proxy
 
 ---
 IntelliJ 단축키
+0. Command + /
+   - 주석
 1. Command + N
    - Getter/Setter
 2. Command + P ( 어노테이션, 파라미터에 커서 둔 다음 )
@@ -115,18 +120,20 @@ IntelliJ 단축키
    - 객체/변수 자동완성
 9. Command + Option + n
    - inline 함수로 변경 ( 변수 커서한 상태로 )
-10. Control + Enter ( ex. Java, Generate 등 )
+10. Command + OPtion + /
+    - 블록주석
+11. Control + Enter ( ex. Java, Generate 등 )
     - 신규파일 생성
     - Generate ( ex. 생성자 )
-11. Control + Command + F
+12. Control + Command + F
     - 전체화면
-12. Control + Shift + R
+13. Control + Shift + R
     - JUnit 에서 TestCase 실행
-13. Control + T
+14. Control + T
     - 함수로 빼기 : 블럭한 후 Control + T -> Extract Method 선택
-14. Control + R
+15. Control + R
     - JUnit 에서 이전에 TestCase 수행했던 것 재수행
-15. Option + Enter
+16. Option + Enter
     - import
     - static import 가 되고, Assertions.assertThat -> assertThat 만 쓸 수 있음
     - Lambda 로 변환
