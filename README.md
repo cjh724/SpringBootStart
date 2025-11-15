@@ -6,8 +6,9 @@
 ---
 SringBoot Terminal 에서 build ( MAC OS )
 1. gradlew 가 존재하는 폴더로 이동
-2. build/libs 폴더에 .jar 파일 생성
-   - 명령어 : ./gradlew clean build
+2. build/libs 폴더에 .jar 파일 생성하기
+   - 명령어1 : ./gradlew build
+   - 명령어1 안될 때 : ./gradlew clean build
    - 프로젝트명-0.0.1-SNAPSHOT.jar 파일이 build/libs 에 생성됨
 3. 서버 실행 ( jar 파일 실행 )
    - 이동 : cd build/libs
@@ -32,7 +33,7 @@ SringBoot Terminal 에서 build ( MAC OS )
 3. learn > reference doc.
 
 ---
-서버 자동 재시작 ( 확인중... )
+서버 자동 재시작
 1. 의존성(dependency) 추가  
    1) build.gradle 에 추가  
    implementation 'org.springframework.boot:spring-boot-devtools'
@@ -43,6 +44,10 @@ SringBoot Terminal 에서 build ( MAC OS )
    4) Advanced Settings 클릭
    5) Allow auto-make to start even if developed application is currently running 체크
    6) gradle 새로고침 클릭
+3. Run/Debug Configurations 설정 변경 ( 2번이 필요한지는 확인 필요 )
+   1) Run > Edit Configurations... 
+   2) Build and run 우측 Modify options 클릭
+   3) Spring > On frame deactivation 클릭 > Update classes and resources 클릭
 
 ---
 스프링 웹개발
@@ -173,7 +178,7 @@ h2 설치
    1) chmod 755 h2
 5. h2 실행 ( 3번 경로에 h2 파일 있음 )
    1) h2
-6. h2 종료2 ( 터미널까지 종료해야 함 )
+6. h2 종료1 ( 터미널까지 종료해야 함 )
    1) Control+Z
    2) jobs
    3) exit
